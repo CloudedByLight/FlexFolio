@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>FlexFolio</title>
+  </head>
+  <body>
+    <section id="main-menu">
+      <header class="plaque">
+        <h1>Hi! I'm FlexFolio</h1>
+        <h1>&#x1F913;</h1>
+        <h2><i>[User]</i>'s Dynamic Portfolio!</h2>
+      </header>
+
+      <div id="wrapper" class="wrapper" data-config="0" data-roundness="0">
+        <div id="bubble1" class="bubble"></div>
+        <div id="bubble2" class="bubble"></div>
+        <div id="bubble3" class="bubble"></div>
+        <form id="identify">
+          <h3>
+            Who are you
+            <div class="question-mark">&#x2753;</div>
+          </h3>
+          <label for="recruiter" class="radio-group">
+            <div id="checkmark1" class="checkmark"></div>
+            <input
+              id="recruiter"
+              type="radio"
+              name="visitor-type"
+              value="recruiter"
+            />
+            HR Recruiter
+          </label>
+          <label for="engineer" class="radio-group">
+            <div id="checkmark2" class="checkmark"></div>
+            <input
+              id="engineer"
+              type="radio"
+              name="visitor-type"
+              value="engineer"
+            />
+            Technical Recruiter
+          </label>
+          <label for="stranger" class="radio-group">
+            <div id="checkmark3" class="checkmark"></div>
+            <input
+              id="stranger"
+              type="radio"
+              name="visitor-type"
+              value="stranger"
+            />
+            Mysterious Stranger
+          </label>
+        </form>
+      </div>
+
+      <div id="copyright">Copyright &copy; Ralph Elhage 2023</div>
+    </section>
+
+    <section id="visitor-selector" class="block block--center">
+      <h2 id="welcome-msg" class="welcome-msg">
+        <span id="welcome">Welcome </span>
+        <div id="dropdown" class="dropdown">
+          <button id="dropbtn" class="dropbtn">Recruiter</button>
+          <ion-icon name="caret-down-outline" id="caret"></ion-icon>
+          <div id="dropdown-content" class="dropdown-content">
+            <span href="#">Engineer</span>
+            <span href="#">Stranger</span>
+          </div>
+        </div>
+      </h2>
+    </section>
+
+    <section id="portfolio--HR" class="portfolio">
+      <div class="block block--center">
+        <div id="bio" class="plaque">
+          <h4>About Me</h4>
+          <img id="profile-pic" src="imgs/profile-pic.jpg" alt="profile-pic" />
+          <p id="bio__text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+            debitis sunt pariatur dolor doloribus, hic, iure accusamus
+            laudantium earum ab aperiam minus aliquid sit adipisci maiores ut.
+            Quis, at fugiat, est expedita dicta quidem vel vitae qui optio minus
+            officiis laboriosam voluptatum mollitia unde ipsa impedit, iste
+            atque quae? Enim?
+          </p>
+        </div>
+      </div>
+      <div class="block block--2div">
+        <div id="edu" class="plaque">
+          <h4>Education</h4>
+          <div class="degree">
+            <span class="degree-data degree__title">Degree</span>
+            <span class="degree-data degree__date">Start Date - End Date </span>
+            <a href="#" class="degree-data degree__uni">@University</a>
+          </div>
+          <div class="degree">
+            <span class="degree-data degree__title">Degree</span>
+            <span class="degree-data degree__date">Start Date - End Date </span>
+            <a href="#" class="degree-data degree__uni">@School</a>
+          </div>
+          <div class="degree">
+            <span class="degree-data degree__title">Certification</span>
+            <span class="degree-data degree__date">Issue Date</span>
+            <a href="#" class="degree-data degree__uni">@Issuing-Body</a>
+          </div>
+          <div class="degree">
+            <span class="degree-data degree__title">Certification</span>
+            <span class="degree-data degree__date">Issue Date </span>
+            <a href="#" class="degree-data degree__uni">@Issuing-Body</a>
+          </div>
+        </div>
+        <div id="skills" class="plaque">
+          <h4>Skills</h4>
+          <ul id="skill-list">
+            <li class="skill">Skill 1</li>
+            <li class="skill">Skill 2</li>
+            <li class="skill">Skill 3</li>
+            <li class="skill">Skill 4</li>
+            <li class="skill">Skill 5</li>
+            <li class="skill">Skill 6</li>
+            <li class="skill">Skill 7</li>
+            <li class="skill">Skill 8</li>
+            <li class="skill">Skill 9</li>
+            <li class="skill">Skill 10</li>
+            <li class="skill">Skill 11</li>
+            <li class="skill">Skill 12</li>
+            <li class="skill">Skill 13</li>
+            <li class="skill">Skill 14</li>
+            <li class="skill">Skill 15</li>
+            <li class="skill">Skill 16</li>
+            <li class="skill">Skill 17</li>
+            <li class="skill">Skill 18</li>
+            <li class="skill">Skill 19</li>
+            <li class="skill">Skill 20</li>
+          </ul>
+        </div>
+      </div>
+      <div class="block block--center">
+        <div id="work" class="plaque">
+          <h4>Work</h4>
+          <div class="job">
+            <span class="job-data job__title">Job Title</span>
+            <a href="#" class="job-data job__company">@Company</a>
+            <span class="job-data job__date">Start Date - End Date </span>
+            <p class="job-data job__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae enim tenetur qui ullam quas consequatur quasi eius
+              libero reiciendis, repellat deleniti odio obcaecati maxime, est
+              doloribus officiis iure, ipsa asperiores corrupti alias debitis
+              voluptas officia.
+            </p>
+          </div>
+          <div class="job">
+            <span class="job-data job__title">Job Title</span>
+            <a href="#" class="job-data job__company">@Company</a>
+            <span class="job-data job__date">Start Date - End Date </span>
+            <p class="job-data job__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae enim tenetur qui ullam quas consequatur quasi eius
+              libero reiciendis, repellat deleniti odio obcaecati maxime, est
+              doloribus officiis iure, ipsa asperiores corrupti alias debitis
+              voluptas officia.
+            </p>
+          </div>
+          <div class="job">
+            <span class="job-data job__title">Job Title</span>
+            <a href="#" class="job-data job__company">@Company</a>
+            <span class="job-data job__date">Start Date - End Date </span>
+            <p class="job-data job__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae enim tenetur qui ullam quas consequatur quasi eius
+              libero reiciendis, repellat deleniti odio obcaecati maxime, est
+              doloribus officiis iure, ipsa asperiores corrupti alias debitis
+              voluptas officia.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio--stranger" class="portfolio">
+      <div class="block block--center">
+        <div id="bio" class="plaque">
+          <h4>About Me</h4>
+          <img id="profile-pic" src="imgs/profile-pic.jpg" alt="profile-pic" />
+          <p id="bio__text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+            debitis sunt pariatur dolor doloribus, hic, iure accusamus
+            laudantium earum ab aperiam minus aliquid sit adipisci maiores ut.
+            Quis, at fugiat, est expedita dicta quidem vel vitae qui optio minus
+            officiis laboriosam voluptatum mollitia unde ipsa impedit, iste
+            atque quae? Enim?
+          </p>
+        </div>
+      </div>
+
+      <div class="block block--center">
+        <div id="hobbies" class="plaque">
+          <h4>Hobbies</h4>
+          <ul id="hobby-list">
+            <li class="hobby">Hobby 1</li>
+            <li class="hobby">Hobby 2</li>
+            <li class="hobby">Hobby 3</li>
+            <li class="hobby">Hobby 4</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="block block--center">
+        <div id="industry" class="plaque">
+          <h4>My Industry</h4>
+          <p id="industry__text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+            debitis sunt pariatur dolor doloribus, hic, iure accusamus
+            laudantium earum ab aperiam minus aliquid sit adipisci maiores ut.
+            Quis, at fugiat, est expedita dicta quidem vel vitae qui optio minus
+            officiis laboriosam voluptatum mollitia unde ipsa impedit, iste
+            atque quae? Enim?
+          </p>
+          <img
+            id="engineer-pic"
+            src="imgs/engineer-pic.png"
+            alt="industry-pic"
+          />
+        </div>
+      </div>
+
+      <div class="block block--center">
+        <div id="projects" class="plaque">
+          <h4>Fun Projects</h4>
+          <div class="prj">
+            <span class="prj-data prj__title">Project Title</span>
+            <a href="#" class="prj-data prj__link">@ProjectLink</a>
+            <p class="prj-data prj__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              adipisci eligendi beatae saepe necessitatibus maiores eveniet sint
+              voluptatum dicta mollitia!
+            </p>
+          </div>
+          <div class="prj">
+            <span class="prj-data prj__title">Project Title</span>
+            <a href="#" class="prj-data prj__link">@ProjectLink</a>
+            <p class="prj-data prj__description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
+              ex illo delectus natus, inventore earum expedita facilis accusamus
+              reprehenderit neque.
+            </p>
+          </div>
+          <div class="prj">
+            <span class="prj-data prj__title">Project Title</span>
+            <a href="#" class="prj-data prj__link">@ProjectLink</a>
+            <p class="prj-data prj__description">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
+              placeat rem vitae fugit repellat nemo autem temporibus aperiam vel
+              nulla?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio--eng" class="portfolio">
+      <div class="block block--center">
+        <div id="bio" class="plaque">
+          <h4>Qualifications</h4>
+          <img id="profile-pic" src="imgs/profile-pic.jpg" alt="profile-pic" />
+          <div id="edu" class="plaque">
+            <div class="degree">
+              <span class="degree-data degree__title">Degree</span>
+              <span class="degree-data degree__date"
+                >Start Date - End Date
+              </span>
+              <a href="#" class="degree-data degree__uni">@University</a>
+            </div>
+            <div class="degree">
+              <span class="degree-data degree__title">Degree</span>
+              <span class="degree-data degree__date"
+                >Start Date - End Date
+              </span>
+              <a href="#" class="degree-data degree__uni">@School</a>
+            </div>
+            <div class="degree">
+              <span class="degree-data degree__title">Certification</span>
+              <span class="degree-data degree__date">Issue Date</span>
+              <a href="#" class="degree-data degree__uni">@Issuing-Body</a>
+            </div>
+            <div class="degree">
+              <span class="degree-data degree__title">Certification</span>
+              <span class="degree-data degree__date">Issue Date </span>
+              <a href="#" class="degree-data degree__uni">@Issuing-Body</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="block block--center">
+        <div id="work" class="plaque">
+          <h4>Work</h4>
+          <div class="job">
+            <span class="job-data job__title">Job Title</span>
+            <a href="#" class="job-data job__company">@Company</a>
+            <span class="job-data job__date">Start Date - End Date </span>
+            <p class="job-data job__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae enim tenetur qui ullam quas consequatur quasi eius
+              libero reiciendis, repellat deleniti odio obcaecati maxime, est
+              doloribus officiis iure, ipsa asperiores corrupti alias debitis
+              voluptas officia.
+            </p>
+          </div>
+          <div class="job">
+            <span class="job-data job__title">Job Title</span>
+            <a href="#" class="job-data job__company">@Company</a>
+            <span class="job-data job__date">Start Date - End Date </span>
+            <p class="job-data job__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae enim tenetur qui ullam quas consequatur quasi eius
+              libero reiciendis, repellat deleniti odio obcaecati maxime, est
+              doloribus officiis iure, ipsa asperiores corrupti alias debitis
+              voluptas officia.
+            </p>
+          </div>
+          <div class="job">
+            <span class="job-data job__title">Job Title</span>
+            <a href="#" class="job-data job__company">@Company</a>
+            <span class="job-data job__date">Start Date - End Date </span>
+            <p class="job-data job__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae enim tenetur qui ullam quas consequatur quasi eius
+              libero reiciendis, repellat deleniti odio obcaecati maxime, est
+              doloribus officiis iure, ipsa asperiores corrupti alias debitis
+              voluptas officia.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="block block--center">
+        <div id="projects" class="plaque">
+          <h4>Projects</h4>
+          <div class="prj">
+            <span class="prj-data prj__title">Project Title</span>
+            <a href="#" class="prj-data prj__link">@ProjectLink</a>
+            <p class="prj-data prj__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              adipisci eligendi beatae saepe necessitatibus maiores eveniet sint
+              voluptatum dicta mollitia!
+            </p>
+          </div>
+          <div class="prj">
+            <span class="prj-data prj__title">Project Title</span>
+            <a href="#" class="prj-data prj__link">@ProjectLink</a>
+            <p class="prj-data prj__description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
+              ex illo delectus natus, inventore earum expedita facilis accusamus
+              reprehenderit neque.
+            </p>
+          </div>
+          <div class="prj">
+            <span class="prj-data prj__title">Project Title</span>
+            <a href="#" class="prj-data prj__link">@ProjectLink</a>
+            <p class="prj-data prj__description">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
+              placeat rem vitae fugit repellat nemo autem temporibus aperiam vel
+              nulla?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <a href="index.html" id="home" class="plaque">&#x1F913;</a>
+    <script src="main.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
